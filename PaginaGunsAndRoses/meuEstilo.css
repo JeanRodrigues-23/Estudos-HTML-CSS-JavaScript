@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+body{
+    background-color: rgba(20, 20, 20, 0.869);      /*Define a cor de fundo*/
+    color: azure;                                   /*Define a cor do texto*/
+    font-family: Arial, sans-serif;                   /*Define a fonte*/
+}
+
+.destaque {
+    text-align: center;                               /*Alinhamento do texto*/
+    background-color: rgb(0, 113, 38);
+    color: #ffffff;
+    padding: 20px;                                           
+    margin: 15px auto;                                /*Margem entre a borda da seção e o item acima, abaixo e janela aos lados*/
+    border: 2px solid #152a00;                      /*Design da borda*/
+    border-radius: 15px;                              /*Desing do arredondamento da borda*/
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.561);  /*Design da somba*/
+    max-width: 600px;                                 /*Define a argura máxima*/
+}
+
+a {
+    color: rgb(109, 109, 255);
+}
+
+.linksAlbunsMenu {
+    display: flex;                                    /*Deixa os links em linha*/
+    gap: 20px;                                        /*Espaço entre os links*/
+    background-color: #333;
+    padding: 10px;                                    /*Distância entre o conteúdo e as bordas do menu*/
+}
+
+.linksAlbunsMenu a {
+    color: white;
+    background-color: green; 
+    text-decoration: none;                            /*Retira o sublinhado*/
+    padding: 8px 12px;                                /*Primeiro termo é a distância do conteúdo até a borda em altura e o segundo em largura*/
+    transition: background-color 0.3s;                /*Tempo de mudança de cor do hover*/
+}
+
+.linksAlbunsMenu a:hover {                            /*Hover é o efeito que ocorre quando o mouse passa em cima do link*/
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.formulario {
+    background-color: green;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: grid;                                     /*Deixa os itens um em cima do outro*/
+    gap: 0px;
+    width: 100%;                                       /*Largura em 100%*/
+    max-width: 400px;                                  /*Largura máxima*/
+}
+
+.container {
+    display: flex; 
+    justify-content: center;                           /* Centraliza horizontalmente o conteúdo */
+    align-items: center;                               /* Centraliza verticalmente o conteúdo */
+    height: 100%;                                      /* Altura total do elemento pai (normalmente <body>) */
+    margin: 15px auto;                                 /* 15px em cima e embaixo, centraliza horizontalmente */
+}
+
+input, textarea {
+    padding: 3px;
+    border: 1px solid rgb(0, 51, 9);
+    border-radius: 5px;
+    font-size: 14px;                                   /* Tamanho da fonte dentro dos campos */
+    transition: border 0.3s box-shadow 0.2s;           /* Suaviza a troca de borda e sombra quando houver hover ou focus */
+}
+
+input:hover, textarea:hover {
+    border-color: rgb(226, 226, 226);
+}
+
+input:focus, 
+textarea:focus {
+    border-color: blue;                             /* Quando o campo está ativo (clicado), a borda vira azul */
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.248);   /* Adiciona sombra ao redor */
+}
+
