@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+body {
+    background-color: #849112;
+    color: #183427;
+}
+
+.baixe {
+    margin: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin: 15px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #7e9861;
+}
+
+p {
+    margin: 15px 50px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: #11390b;
+    text-decoration: none;
+}
