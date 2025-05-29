@@ -1,10 +1,12 @@
+@charset "utf-8";
+
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    display: flex; /*Tranforma o body em flex container*/                        
+    justify-content: center; /*Alinha orizontamente*/
+    align-items: center; /*Alinha verticalmente*/
+    height: 100vh; /*Define o tamanho do body como 100%, permitindo a centralizacao vertical. Sem ele, o body teria altura do conteudo sem ele.*/
+    margin: 0; /*Os navegadores geralmente colocam margens entre o fim da pagina o body. Este comando garante que nao haja margem, qualificando a centralizacao*/
     background-color: #331F19; /* Fundo neutro */
 }
 .container {
@@ -31,7 +33,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1em; /*Significa 100% do tamanho que a fonte ja tem. 1.2em, por exemplo, significaria 120%*/
     transition: background-color 0.3s ease;
     margin-top: 10px;
 }
