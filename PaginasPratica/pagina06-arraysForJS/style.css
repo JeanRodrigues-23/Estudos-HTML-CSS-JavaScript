@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*Define a altura como 100% do viewport*/
+    margin: 0;
+    background-color: #331F19; 
+}
+.container {
+    text-align: center;
+    background-color: #CBBBA7;
+    padding: 20px; /*Distância do conteúdo até a borda do elemento pai*/
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*0 - posição horizontal; 4px - posição vertical; 8px - desfoque; (quinto termo que é opcional é o tamanho da sombra); rgba - cor da sombra.*/
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #8B7D70;
+}
+h1 {
+    color: #331F19;
+}
+p {
+    color: #331F19;
+    font-size: 1.1em; /*Aumenta o tamanho da fonte em 10% relativo ao elemento pai*/
+}
+button {
+    background-color: #60041A;
+    color: #F4F0EA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /*Ao passar o mouse, o ponteiro vira mãozinha, mostrando ser clicável*/
+    font-size: 1em;
+    transition: background-color 0.3s ease; /*Na trasição, muda o fundo com um tempo de 0.3s usando ease (começa devagar, acelera e desacelera no final)*/
+    margin-top: 10px; /*Adiciona uma margem de 10px acima*/
+}
+button:hover {
+    background-color: #A34743;
+}
+ul {
+    list-style: none; /*Remove as marcas da lista, como bolinhas, numeros, etc.*/
+    padding: 0;
+    margin-top: 20px;
+}
+ul li {
+    background-color: #F4F0EA;
+    color: #331F19;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o campo de entrada */
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px; /*Margem inferior*/
+    border: 2px solid #8B7D70;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /*O inset faz com que a sombra fique pra dentro, não pra fora, como um recuo*/
+    outline: none; /*Retira a mudança automática de um elemento quando este está selecinado (quando retirado, é importando colocar outra)*/
+    transition: border-color 0.3s ease;
+}
+input[type="text"]:focus {
+    border-color: #60041A;
+    box-shadow: inset 0 2px 4px rgba(96, 4, 26, 0.3);
+}
